@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My store</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+
+</head>
+
+<body>
+    <!--- header --->
+
+    <header class="sticky">
+        <a href="#" class="logo"><img src="logo1.PNG" style="width: 160px;height: 80px;"></a>
+        <div>
+
+            <ul class="navlist">
+                <li><a href="#">Home</a> </li>
+                <li><a href="#nvcollection">New collection</a> </li>
+                <li><a href="#lastchance">Last chance</a> </li>
+                <li><a href="#about">About us</a> </li>
+                <li><a href="#contact">Contact us</a> </li>
+                <li><a href="#service">Our services</a> </li>
+                <li><a href="#login">Login</a> </li>
+            </ul>
+        </div>
+
+        <div class="nav-right">
+            <a href="#"><i class='bx bx-cart-add'></i></a>
+            <a href="#"><i class='bx bx-user'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+
+    <!--- home --->
+    <section class="home">
+        <div class="home-text">
+            <h5>Wassim store</h5>
+            <h1>"Where Style Meets Simplicity"</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+        </div>
+        <div class="home-img">
+            <img src="a2.png">
+        </div>
+    </section>
+
+    <!-- Nouvelle collection -->
+
+    <div class="container">
+        <div class="row">
+            <section class="col-lg-12 text-center">
+                <p style=" font-size: 34px;">Chaussures, T-shirt et pantalon</p>
+                <p style=" font-size: 24px; color: lightgrey;">MODE, BEAUTÉ, LUXE ET PLUS</p>
+                <br><br>
+                <p style="font-size: 24px;" id="nvcollection">New Collection</p>
+
+                <!-- T-shirt -->
+                <div class="row">
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="tshirt1.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('tshirt1.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="tshirt2.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('tshirt2.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="tshirt3.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('tshirt3.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="tshirt4.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('tshirt4.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                </div>
+                <!-- Pantallon -->
+                <div class="row">
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="pant1.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('pant1.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="pant2.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('pant2.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="pant3.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('pant3.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="pant4.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('pant4.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                </div>
+
+                <!-- chaussures -->
+                <div class="row">
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="chaus1.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('chaus1.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="chaus2.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('chaus2.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="chaus3.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('chaus3.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                    <article class="col-lg-3">
+                        <div class="container3 text-center">
+                            <img src="chaus4.jpg" alt="T-shirt 1" class="img-fluid">
+                            <button type="button" class="btn btn-primary mt-3" data-bs-toggle="modal"
+                                data-bs-target="#myModal"
+                                onclick="showDetails('chaus4.jpg', '69.900 DT')">Acheter</button>
+                        </div>
+                        <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                        <h4 style="text-align: center;">69.900 DT</h4>
+                    </article>
+                </div>
+
+
+
+                <!-- Last chance -->
+
+                <div class="row ">
+                    <section class="col-lg-12  ">
+                        <p style="text-align: center;font-size: 24px;" id="lastchance">Last Chance</p>
+                        <div class="row ">
+                            <article class="col-lg-3 ">
+                                <div class="container3">
+                                    <img src="last1.jpg" alt="T-shirt 1" class="img-fluid">
+                                    <button class="btn">Acheter</button>
+                                </div>
+                                <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                                <p style="text-align: center;"> <del class="text-muted">149.000 DT</del>
+                                <p class="card-text" style="color: red; text-align: center;">29.900 DT Économisez 80%
+                                </p><br>
+                            </article>
+                            <article class="col-lg-3 ">
+                                <div class="container3">
+                                    <img src="last2.jpg" alt="T-shirt 1" class="img-fluid">
+                                    <button class="btn">Acheter</button>
+                                </div>
+                                <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                                <p style="text-align: center;"> <del class="text-muted">149.000 DT</del>
+                                <p class="card-text" style="color: red; text-align: center;">29.900 DT Économisez 80%
+                                </p><br>
+                            </article>
+                            <article class="col-lg-3 ">
+                                <div class="container3">
+                                    <img src="last3.jpg" alt="T-shirt 1" class="img-fluid">
+                                    <button class="btn">Acheter</button>
+                                </div>
+                                <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                                <p style="text-align: center;"> <del class="text-muted">149.000 DT</del>
+                                <p class="card-text" style="color: red; text-align: center;">29.900 DT Économisez 80%
+                                </p><br>
+                            </article>
+                            <article class="col-lg-3 ">
+                                <div class="container3">
+                                    <img src="last4.jpg" alt="T-shirt 1" class="img-fluid">
+                                    <button class="btn">Acheter</button>
+                                </div>
+                                <h5 class="text-dark mt-3" style="text-align: center;">T-shirt</h5>
+                                <p style="text-align: center;"> <del class="text-muted">149.000 DT</del>
+                                <p class="card-text" style="color: red; text-align: center;">29.900 DT Économisez 80%
+                                </p><br>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+        </div>
+
+        <!-- Ajoutez une div pour le modèle -->
+        <div class="modal" id="myModal">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <!-- Modal Header -->
+                    <div class="modal-header">
+                        <h4 class="modal-title">Détails de l'article</h4>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <img id="modalImage" src="" alt="Image de l'article" style="width: 100%;">
+                        <p id="modalPrice" style="font-size: 24px; font-weight: bold;"></p>
+                    </div>
+                    <!-- Modal footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                        <button type="button" class="btn btn-primary" onclick="addToCart()">Ajouter au panier</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--- About --->
+
+        <div class="container" id="about" id="about">
+            <div class="row">
+                <article class="col-lg-6 col-md-12 ">
+                    <div class="slideshow">
+                        <div class="slide">
+                            <img src="aprop.jpg" style="width: 450px;height: 500px;margin-left: 100px; ">
+                        </div>
+                        <div class="slide">
+                            <img src="aprop2.jpg" style="width: 450px;height: 500px; margin-left: 100px;">
+                        </div>
+                        <div class="slide">
+                            <img src="aprop3.jpg" style="width: 450px;height: 500px;margin-left: 100px; ">
+                        </div>
+                    </div><br><br>
+
+                </article>
+                <article class="col-lg-5 col-md-12 text-center">
+                    <h1 class="mt-4">Qui sommes-nous?</h1>
+                    <p class="mt-4">Nous sommes un magasin de vêtements en ligne proposant une large gamme de produits
+                        tendance pour
+                        hommes. Notre objectif est de fournir à nos clients une expérience de shopping en ligne agréable
+                        et pratique,
+                        avec une sélection soigneusement choisie de vêtements de qualité à des prix abordables.</p>
+                    <p>Nos collections comprennent tout, des vêtements décontractés aux tenues élégantes pour toutes les
+                        occasions.
+                        Que vous recherchiez des vêtements pour le travail, les loisirs ou les événements spéciaux,
+                        notre magasin a ce
+                        qu'il vous faut.</p>
+                    <p>Nous nous engageons à offrir un excellent service à la clientèle et à garantir la satisfaction de
+                        nos
+                        clients.
+                        Si vous avez des questions sur nos produits ou si vous avez besoin d'aide pour passer une
+                        commande, n'hésitez
+                        pas à nous contacter. Nous sommes là pour vous aider!</p>
+                </article>
+            </div>
+        </div>
+
+
+        <!-- Contact -->
+
+        <section class="cta" id="contact">
+            <div class="cta-content">
+                <h1 style="text-align: center;">Contact us</h1>
+                <form>
+                    <div>
+                        <label for="fname" class="form-label">Nom et Prenom</label>
+                        <input type="text" class="form-control" id="fname" name="firstname"
+                            placeholder="Nom et prenom...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="sujet" class="form-label">Sujet</label>
+                        <input type="text" class="form-control" id="sujet" name="sujet" placeholder="Sujet...">
+                    </div>
+                    <div class="mb-3">
+                        <label for="msg" class="form-label">Message</label>
+                        <textarea class="form-control" id="msg" name="msg" placeholder="Entrer votre besoin.."
+                            style="height:170px"></textarea>
+                    </div>
+                    <input type="submit" value="Envoyer" class="btn"
+                        style="padding: 16px 30px; background-color: black;color: white;">
+                </form>
+            </div>
+
+        </section>
+
+        <!--Services-->
+
+        <div class="services" id="Service">
+            <h1>our services</h1>
+
+            <div class="services_cards">
+                <div class="services_box">
+                    <i class='bx bxs-truck'></i>
+                    <h3>Fast Delivery</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="services_box">
+                    <i class='bx bx-rotate-left'></i>
+                    <h3>3 Days Replacement</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+
+                <div class="services_box">
+                    <i class="ri-customer-service-line"></i>
+                    <h3>24 x 7 Support</h3>
+                    <p>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+        <!--Login Form-->
+
+
+
+        <div class="container" id="login">
+                <div class="row">
+                    <div class="login_form">
+                    <article class="col-lg-6 col-md-12 ">
+                        <div class="left">
+                            <img src="a1.png">
+                        </div>
+                    </article>
+
+                    <article class="col-lg-5 col-md-12 text-center">
+                        <div class="right">
+                            <h1>Login!</h1>
+
+                            <form action="#" method="post">
+                                <p>User Name</p>
+                                <div class="user">
+                                    <i class="fa-solid fa-user"></i>
+                                    <input type="text" name="user" placeholder="User Name" class="username">
+                                </div>
+
+                                <p class="passworg_tag">Password</p>
+                                <div class="password">
+                                    <i class="fa-solid fa-lock"></i>
+                                    <input type="text" name="password" placeholder="Password">
+                                </div>
+
+                                <p class="forget">Forget Password ?</p>
+                                <p class="creation"><a href="registration.html">Create account</a></p>
+                                <button type="submit">Login</button>
+                            </form>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- footer -->
+        <section class="footer">
+            <div class="footer-box">
+                <h3>Welcome back!</h3>
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore voluptates iure magnam fuga veniam,
+                    cumque repudiandae quae! Esse quidem nobis ipsum, iure explicabo vitae aperiam laboriosam quaerat
+                    dignissimos? Eligendi, consectetur!</p>
+                <div class="icons">
+                    <a href="#"><i class='bx bxl-facebook'></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-tiktok'></i></i></a>
+                </div>
+            </div>
+
+            <div class="footer-box">
+                <h3>Contact</h3>
+                <p>medwassim.houachri@gmail.com</p>
+                <p>+216 52158800</p>
+            </div>
+        </section>
+
+
+
+
+        <script src="script1.js"></script>
+        <!-- Bootstrap JS -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
